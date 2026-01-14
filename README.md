@@ -25,3 +25,9 @@
 1. Use NRF toolchain container as base image for Dockerfile (3.2.0) [image here](https://github.com/nrfconnect/sdk-nrf/pkgs/container/sdk-nrf-toolchain/592725564?tag=v3.2.0)
 2. Use the west command to init the bm workspace (1.0.0)
 3. Run west update to finish installation
+
+- I am having problems getting the workspace structure to work. This structure is ideal since it places a dedicated version of the SDK in the repo. I am following the instructions from the documentation so that I can get a workspace build working on my local machine first. The application I made before is technically a freestanding app which is only good for demos.
+- I followed the instructions and I am now having the bm SDK updated for the 3rd time. I think this will work though.
+- The move may be to init the west workspace locally to update the SDK and then spin up the container.
+- I will have to deal with the problem of the extension creating a git repo within mine. I deleted it last time and I think that may have been part of the problem. Maybe I only need the git repo in the beginning and can delete it after.
+- I am also not sure that the build is using the local workspace SDK. I cannot select it when 
