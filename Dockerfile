@@ -6,10 +6,7 @@ FROM ghcr.io/nrfconnect/sdk-nrf-toolchain:v3.2.0
 WORKDIR /workspace
 
 # Init the west workspace.
-RUN west init -m https://github.com/nrfconnect/sdk-nrf-bm --mr v1.0.0 nrf-bm
-
-# Step into the west workspace.
-WORKDIR /workspace/nrf-bm
+RUN west init -m https://github.com/nrfconnect/sdk-nrf-bm --mr v1.0.0 .
 
 # Update the west workspace.
 RUN west update

@@ -31,3 +31,10 @@
 - The move may be to init the west workspace locally to update the SDK and then spin up the container.
 - I will have to deal with the problem of the extension creating a git repo within mine. I deleted it last time and I think that may have been part of the problem. Maybe I only need the git repo in the beginning and can delete it after.
 - I am also not sure that the build is using the local workspace SDK. I cannot select it when 
+
+## Steps for creating a workspace application
+
+- I created a dedicated SDK on my local machine and created a new application inside of it based on the LEDs example.
+- My local VS code picked up the SDK and I was able to compile using this version (not the one in the ncs directory)
+- I am now copying the docker files over from the previous repo to see if I can compile in the container
+- IT WORKED!!! I had to redo the build config, but it was able to find the workspace SDK. Very good!

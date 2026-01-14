@@ -3,6 +3,6 @@ services:
   # TODO: Add this container to the github container registry.
     image: nrf-dev
     volumes:
-      - .:/workspace/nrf-bm/apps/container-demo
-    working_dir: /workspace/nrf-bm/apps/container-demo
+      - .:/workspace/application
+    working_dir: /workspace/application
     tty: true
