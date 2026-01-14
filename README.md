@@ -19,3 +19,9 @@
 - The bare metal SDK v1.0.0 requires toolchain version 3.2.0.
 - The Github method showed what commands it ran in the terminal. I output the logs to the desktop so that I can copy them later.
 - I got a working build using the GitHub method. This is the install method I am going to emulate.
+
+## Steps to copy the Github SDK and toolchain install method
+
+1. Use NRF toolchain container as base image for Dockerfile (3.2.0) [image here](https://github.com/nrfconnect/sdk-nrf/pkgs/container/sdk-nrf-toolchain/592725564?tag=v3.2.0)
+2. Use the west command to init the bm workspace (1.0.0)
+3. Run west update to finish installation

@@ -1,8 +1,18 @@
-# Start with debian bookworm slim as the base image
-FROM debian:bookworm-slim
+# Start with the official nRF Connect SDK Toolchain image.
+# Version 3.2.0 is necessary since we are using version 1.0.0 of the bare metal SDK.
+FROM ghcr.io/nrfconnect/sdk-nrf-toolchain:v3.2.0
 
-# Update and install dependencies
-RUN apt-get update && apt-get install -y \
-    curl
+# Set the working directory inside the container.
+WORKDIR /workspace
 
-# Install nRF SDK and Toolchain
+# Init the west workspace.
+RUN west init -m https://github.com/nrfconnect/sdk-nrf-bm --mr v1.0.0 nrf-bm
+
+# Step into the west workspace.
+WORKDIR /workspace/nrf-bm
+
+# Update the west workspace.
+RUN west update
+
+# Export the environment.
+RUN west zephyr-export
