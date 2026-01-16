@@ -13,3 +13,8 @@ RUN west update
 
 # Export the environment.
 RUN west zephyr-export
+
+# Run the JLink installer that already exists in the base image.
+# Install will throw an error, but it can be ignored.
+RUN dpkg -i /jlink/JLink_Linux.deb && \
+    apt-get -f install -y || true

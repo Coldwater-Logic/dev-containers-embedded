@@ -38,3 +38,9 @@
 - My local VS code picked up the SDK and I was able to compile using this version (not the one in the ncs directory)
 - I am now copying the docker files over from the previous repo to see if I can compile in the container
 - IT WORKED!!! I had to redo the build config, but it was able to find the workspace SDK. Very good!
+
+## Next things to figure out
+
+- [x] Resolve issue with SEGGER agreement and install (added command to Dockerfile)
+- [ ] Add dev container config for VS Code (including extensions)
+- [ ] Test Flashing and Debugging from container (PURCHASE DEV BOARD)
