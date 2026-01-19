@@ -44,3 +44,16 @@
 - [x] Resolve issue with SEGGER agreement and install (added command to Dockerfile)
 - [ ] Add dev container config for VS Code (including extensions)
 - [ ] Test Flashing and Debugging from container (PURCHASE DEV BOARD)
+- [ ] Get git working inside the container
+
+- Point out solution to JLink install
+
+## Dev Container Config
+
+- I added the config. I can't get auto install extensions to work, but otherwise it seems to be fine.
+- I need to make sure the container is running before trying to hook in the dev container.
+
+## Git in Container
+
+- I need to add a .gitattributes file since line endings are different between Windows and Linux
+- I also need to use a command to get Windows to stop helping with the line endings `git config --global core.autocrlf false`

@@ -1,0 +1,20 @@
+{
+  "name": "nrf-dev",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "nrf-dev",
+  "workspaceFolder": "/workspace/application",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "nordic-semiconductor.nrf-connect",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  }
+
+  // "remoteUser": "root"
+}
