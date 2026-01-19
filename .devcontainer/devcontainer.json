@@ -10,8 +10,7 @@
     "vscode": {
       "extensions": [
         "ms-vscode.cpptools",
-        "nordic-semiconductor.nrf-connect",
-        "ms-vscode.cmake-tools"
+        "nordic-semiconductor.nrf-connect"
       ]
     }
   }

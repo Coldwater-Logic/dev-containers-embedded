@@ -44,7 +44,8 @@
 - [x] Resolve issue with SEGGER agreement and install (added command to Dockerfile)
 - [ ] Add dev container config for VS Code (including extensions)
 - [ ] Test Flashing and Debugging from container (PURCHASE DEV BOARD)
-- [ ] Get git working inside the container
+- [x] Get git working inside the container
+- [ ] Get Autocomplete and Linting to work in container
 
 - Point out solution to JLink install
 
@@ -57,3 +58,4 @@
 
 - I need to add a .gitattributes file since line endings are different between Windows and Linux
 - I also need to use a command to get Windows to stop helping with the line endings `git config --global core.autocrlf false`
+- Let's see if git commits work in the container
